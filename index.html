@@ -5,6 +5,21 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<title>OldGame-Proyect_WebSite</title>
 	
+	 <script>
+	    //CACHE.CLeAN  on start                 
+  if ('caches' in window) {
+    caches.keys().then(function(names) {
+      for (let name of names) caches.delete(name);
+    });
+  }
+
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then(function(registrations) {
+             for (let reg of registrations) reg.unregister();
+    });
+  }
+	 </script>
+	
 	<!-- Standardised web app manifest -->
 	<link rel="manifest" href="appmanifest.json" />
 	
@@ -130,20 +145,10 @@
 			{
 				OnRegisterSWError(e);
 			}
-    //CACHE.CLeAN                   
-  if ('caches' in window) {
-    caches.keys().then(function(names) {
-      for (let name of names) caches.delete(name);
-    });
-  }
 
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.getRegistrations().then(function(registrations) {
-             for (let reg of registrations) reg.unregister();
-    });
-  }
 		};
     </script>
 </body> 
 
 </html> 
+
