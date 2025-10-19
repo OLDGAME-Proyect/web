@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1760131680,
+	"version": 1760909909,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -32,6 +32,8 @@
 		"images/textcompttd-sheet0.png",
 		"images/tiktokbuttom-sheet0.png",
 		"images/ytbuttom-sheet0.png",
+		"images/whiteresa-sheet0.png",
+		"images/google_drive_icon_2020svg-sheet0.png",
 		"icon-16.png",
 		"icon-32.png",
 		"icon-114.png",
@@ -39,4 +41,5 @@
 		"icon-256.png",
 		"loading-logo.png"
 	]
+
 }
